@@ -1,0 +1,10 @@
+{
+  "name": "host-package",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bson": "^6.2.0",
+    "dependency-package": "file:../dependency-package"
+  }
+}
