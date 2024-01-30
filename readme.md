@@ -1,9 +1,19 @@
 # overview
 
-this just demonstrates an issue where if two `bson` packages are loaded and you use the `equals` method on an `OjbectId` object you will get back a very vague error like below.
+this just demonstrates an issue where if two `bson` packages are loaded and you use the `equals` method on an `ObjectId` object you will get back a very vague error like below.
 
 ```
 TypeError: Cannot read properties of undefined (reading '11')
+```
+
+## run locally
+run the following command to see the error.
+```bash
+cd dependency-package
+yarn install
+cd ../host-package
+yarn install
+node index.js
 ```
 
 ## cause
